@@ -1,0 +1,32 @@
+
+
+
+.portfolio {
+  // background: url(../img/bg-portfolio-mobile.jpg);
+  // background-size: cover;
+  // background-position: -62% 0;
+  // height: 100vh;
+  background-color: #08101a;
+}
+
+.portfolio-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.portfolio__title {
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.portfolio__item {
+    padding-bottom: 20px;
+}

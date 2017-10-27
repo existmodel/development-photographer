@@ -1,0 +1,28 @@
+.about-us {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.about-us__title {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us__text {
+  font-family: $font-stack;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.about-us__author {
+  font-family: 'Neucha', cursive;
+  font-size: 15px;
+}
+
+.about-us__description {
+  margin-bottom: 25px;
+}

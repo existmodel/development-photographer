@@ -1,0 +1,41 @@
+.contacts {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.contacts__title {
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  color: $black;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 75px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contacts__email,
+.contacts__phone,
+.contacts__social {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.contacts__email-adress {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.contacts__email-link {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $black;
+}
+
+.contacts__phone-number {
+  font-size: 25px;
+  font-weight: 300;
+}
