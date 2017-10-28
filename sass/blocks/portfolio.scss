@@ -1,18 +1,10 @@
-
-
-
 .portfolio {
-  // background: url(../img/bg-portfolio-mobile.jpg);
-  // background-size: cover;
-  // background-position: -62% 0;
-  // height: 100vh;
   background-color: #08101a;
 }
 
 .portfolio-wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
-
+  margin: 0 auto;
+  width: 320px;
 }
 
 .portfolio__title {
@@ -21,7 +13,7 @@
   color: $white;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
@@ -29,4 +21,22 @@
 
 .portfolio__item {
     padding-bottom: 20px;
+    width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+ .portfolio__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .portfolio-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .portfolio-wrapper {
+    width: 1200px;
+  }
 }

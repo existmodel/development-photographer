@@ -30,7 +30,7 @@
   color: $white;
 
   &:hover {
-    color: $black;
+    opacity: 0.5;
   }
 }
 
@@ -91,14 +91,23 @@
   }
 
   .main-nav__link {
-    color: #f1f1f1;
+    // color: #f1f1f1;
 
     &:hover {
       color: $black;
     }
   }
+
+  .main-nav__list {
+      display: flex;
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
 }
 
 @media (min-width: $desktop-width) {
+
 
 }

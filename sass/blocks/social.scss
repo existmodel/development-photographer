@@ -4,3 +4,38 @@
   justify-content: center;
 }
 
+.social__link {
+  cursor: pointer;
+}
+
+.social__link--ins {
+  background: transparent url("../img/ins.png") no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+
+.social__link--vk {
+  background: transparent url("../img/vk.png") no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.social__link--skype {
+  background: transparent url("../img/skype.png") no-repeat;
+  background-size: cover;
+  display: block;
+  margin-top: 5px;
+  width: 35px;
+  height: 35px;
+  margin-top: 8px;
+}
+
+.social__item.social__item--ins {
+  margin-left: 10px;
+  margin-right: 17px;
+}

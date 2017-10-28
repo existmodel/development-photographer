@@ -1,10 +1,8 @@
 
-
-
 .page-header {
   // width: 320px;
   // height: 100vh;
-  background: url(../img/bg-mobile.jpg);
+  // background: url(../img/bg-mobile.jpg);
   background-size: auto;
   background-position: -62% 0;
   color: $white;
@@ -54,3 +52,19 @@
   letter-spacing: 2px;
   font-weight: 300;
 }
+
+@media (min-width: $tablet-width) {
+
+  .page-header__wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header {
+    width: 1200px;
+    height: 100vh;
+  }
+}
+
