@@ -1,7 +1,7 @@
 .about-us {
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .about-us__title {
@@ -9,16 +9,18 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    text-align: center;
+    // text-align: center;
     margin: 0;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .about-us__text {
   font-family: $font-stack;
   font-weight: 300;
   line-height: 24px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .about-us__author {
@@ -27,5 +29,14 @@
 }
 
 .about-us__description {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+
 }

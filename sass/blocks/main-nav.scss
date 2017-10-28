@@ -86,6 +86,13 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .main-nav {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+  }
+
   .main-nav--tablet {
     display: flex;
   }
@@ -100,6 +107,7 @@
 
   .main-nav__list {
       display: flex;
+      justify-content: space-between;
     }
 
     .main-nav__toggle {
