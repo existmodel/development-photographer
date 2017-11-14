@@ -32,6 +32,10 @@
   margin-bottom: 30px;
 }
 
+.about-us__img {
+  width: 280px;
+}
+
 @media (min-width: $tablet-width) {
   .about-us {
     display: flex;
@@ -41,16 +45,29 @@
   }
   .about-us__description {
     order: 1;
-    width: 380px;
+    width: 355px;
+    padding-left: 20px;
   }
 
   .about-us__img-wrapper {
-    padding-top: 115px;
-    padding-right: 40px;
+    padding-top: 5px;
+    padding-right: 20px;
   }
 
   .about-us__text {
     padding-bottom: 30px;
+    // padding-left: 20px;
+  }
+
+  .about-us__title {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    width: 780px;
+    text-align: center;
+  }
+
+  .about-us__img {
+    width: 330px;
   }
 }
 

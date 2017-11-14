@@ -22,8 +22,16 @@
 }
 
 .portfolio__item {
-    padding-bottom: 20px;
-    width: 280px;
+  padding-bottom: 20px;
+  width: 280px;
+}
+
+.portfolio__img {
+  display: block;
+}
+
+.portfolio__popup {
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,6 +42,15 @@
   }
   .portfolio-wrapper {
     width: 768px;
+  }
+
+  .portfolio__title {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .portfolio__item {
+    padding-bottom: 40px;
   }
 }
 

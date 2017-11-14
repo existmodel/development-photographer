@@ -80,3 +80,7 @@
           optimized: false
         });
       }
+
+      $(document).ready(function() {
+        $(".portfolio__popup").magnificPopup({type:"image"});
+      });

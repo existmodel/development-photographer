@@ -41,3 +41,18 @@
   font-weight: 300;
   margin-bottom: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__title  {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .contacts__email-adress {
+    margin-bottom: 50px;
+  }
+
+  .contacts__phone-number {
+    margin-bottom: 50px;
+  }
+  }
