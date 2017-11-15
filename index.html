@@ -18,13 +18,19 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#about-us">О нас</a>
+            <a href="#about-us" onclick="slowScroll('#about-us')" class="main-nav__link">
+              <span data-hover="О&nbsp;нас">О нас</span>
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#portfolio">Портфолио</a>
+            <a class="main-nav__link" href="#portfolio" onclick="slowScroll('#portfolio')">
+              <span data-hover="Портфолио">Портфолио</span>
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#contacts">Контакты</a>
+            <a class="main-nav__link" href="#contacts" onclick="slowScroll('#contacts')">
+              <span data-hover="Контакты">Контакты</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -41,21 +47,29 @@
     </header>
     <main class="page-main">
       <section class="about-us" id="about-us">
-        <nav class="main-nav main-nav--tablet ">
+        <nav class="main-nav main-nav--tablet main-nav--line">
           <ul class="main-nav__list main-nav__list--about-us">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us" href="#">О нас</a>
+              <a class="main-nav__link main-nav__link--about-us">
+                О нас
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us" href="#portfolio">Портфолио</a>
+              <a class="main-nav__link main-nav__link--about-us" href="#portfolio" onclick="slowScroll('#portfolio')">
+                <span data-hover="Портфолио">Портфолио</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us" href="#">Контакты</a>
+              <a class="main-nav__link main-nav__link--about-us" href="#contacts" onclick="slowScroll('#contacts')">
+                <span data-hover="Контакты">Контакты</span>
+              </a>
             </li>
           </ul>
         </nav>
-        <h2 class="about-us__title">О нас</h2>
+        <!-- <h2 class="about-us__title">О нас</h2> -->
         <div class="about-us__description">
+          <h2 class="about-us__title">О нас</h2>
+
 
           <p class="about-us__text">Привет! Хочешь качественные и естественные снимки? Тогда тебе к нам.)</p>
           <p class="about-us__text">
@@ -76,15 +90,19 @@
       <section class="portfolio" id="portfolio">
         <div class="portfolio-wrapper">
           <nav class="main-nav main-nav--tablet ">
-            <ul class="main-nav__list main-nav__list--about-us">
+            <ul class="main-nav__list ">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--about-us" href="#">О нас</a>
+                <a class="main-nav__link " href="#" href="#about-us" onclick="slowScroll('#about-us')">
+                  <span data-hover="О&nbsp;нас">О нас</span>
+                </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--about-us" href="#portfolio">Портфолио</a>
+                <a class="main-nav__link ">Портфолио</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--about-us" href="#">Контакты</a>
+                <a class="main-nav__link " href="#contacts" onclick="slowScroll('#contacts')">
+                  <span data-hover="Контакты">Контакты</span>
+                </a>
               </li>
             </ul>
           </nav>
@@ -126,43 +144,75 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <nav class="main-nav main-nav--tablet main-nav--line">
+            <ul class="main-nav__list main-nav__list--about-us">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us" href="#about-us" onclick="slowScroll('#about-us')">
+                  <span data-hover="О&nbsp;нас">О нас</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us" href="#portfolio" onclick="slowScroll('#portfolio')">
+                  <span data-hover="Портфолио">Портфолио</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- <h2 class="contacts__title">Контакты</h2> -->
         <div class="contacts" id="contacts">
-          <nav class="main-nav main-nav--tablet ">
-          <ul class="main-nav__list main-nav__list--about-us">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us" href="#">О нас</a>
+<!--           <nav class="main-nav main-nav--tablet main-nav--line">
+            <ul class="main-nav__list main-nav__list--about-us">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us" href="#">О нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us" href="#portfolio">Портфолио</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav> -->
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__email">Почта:</p>
+          <p class="contacts__email-adress"><a href="mailto:sarizava@yandex.ru" class="contacts__email-link">purpur@gmail.com</a></p>
+          <p class="contacts__phone">Телефон:</p>
+          <p class="contacts__phone-number">+7953 371 91 10</p>
+          <p class="contacts__social">Социальные<br> сети:</p>
+          <ul class="social">
+            <li class="social__item social__item--vk">
+              <a href="https://vk.com/ppurpurrr" class="social__link social__link--vk"><span class="visually-hidden"> Вконтакте</span></a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us" href="#portfolio">Портфолио</a>
+            <li class="social__item social__item--ins">
+              <a href="https://www.instagram.com/ppurpurr" class="social__link social__link--ins"><span class="visually-hidden">Инстаграмм</span>
+              </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us" href="#">Контакты</a>
+            <li class="social__item social__item--skype">
+              <a href="skype:evanuta?call" class="social__link social__link--skype"><span class="visually-hidden"> Скайп</span></a>
             </li>
           </ul>
-        </nav>
-          <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__email">Почта:</p>
-        <p class="contacts__email-adress"><a href="mailto:sarizava@yandex.ru" class="contacts__email-link">purpur@gmail.com</a></p>
-        <p class="contacts__phone">Телефон:</p>
-        <p class="contacts__phone-number">+7953 371 91 10</p>
-        <p class="contacts__social">Социальные<br> сети:</p>
-        <ul class="social">
-          <li class="social__item social__item--vk">
-            <a href="https://vk.com/ppurpurrr" class="social__link social__link--vk"><span class="visually-hidden"> Вконтакте</span></a>
-          </li>
-           <li class="social__item social__item--ins">
-            <a href="https://www.instagram.com/ppurpurr" class="social__link social__link--ins"><span class="visually-hidden">Инстаграмм</span>
-            </a>
-          </li>
-           <li class="social__item social__item--skype">
-            <a href="skype:evanuta?call" class="social__link social__link--skype"><span class="visually-hidden"> Скайп</span></a>
-          </li>
-        </ul>
-  </div>
+        </div>
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-text"> 2017 © Творчество фотографов Purpur</p>
+        </div>
       </div>
 
     </footer>
-     <script src="js/script.js" type="text/javascript"></script>
-     <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- <script src="js/script.js" type="text/javascript"></script> -->
+      <script src="libs/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
+      <script src="js/script.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        function slowScroll(id) {
+          var offset = 0;
+          $("html, body").animate ({
+            scrollTop: $(id).offset ().top - offset
+          }, 1000);
+          return false;
+        }
+      </script>
+      <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
   </body>
 </html>

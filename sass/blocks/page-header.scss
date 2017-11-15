@@ -53,7 +53,7 @@
   font-weight: 300;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
 
   .page-header__wrapper {
     width: 768px;
@@ -75,18 +75,26 @@
   //   height: 500px;
 
 }
-.page-header__title {
-  padding-top: 280px;
-  padding-bottom: 200px;
-}
-
-}
-
-@media (min-width: $desktop-width) {
-
-  .page-header {
-    width: 1200px;
-    height: 100vh;
+  .page-header__title {
+    padding-top: 280px;
+    padding-bottom: 200px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1150px;
+    height: 100vh;
+  }
+
+    .page-header__wrapper {
+      width: 1150px;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+
+  .page-header__title {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}

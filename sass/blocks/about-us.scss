@@ -2,6 +2,8 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 60px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .about-us__title {
@@ -42,6 +44,9 @@
     flex-wrap: wrap;
     padding-left: 30px;
     padding-right: 30px;
+    width: 768px;
+    padding-bottom: 50px;
+    // height: 100vh;
   }
   .about-us__description {
     order: 1;
@@ -50,8 +55,10 @@
   }
 
   .about-us__img-wrapper {
-    padding-top: 5px;
+    padding-top: 35px;
     padding-right: 20px;
+    text-align: center;
+
   }
 
   .about-us__text {
@@ -60,10 +67,10 @@
   }
 
   .about-us__title {
-    padding-top: 60px;
-    padding-bottom: 70px;
-    width: 780px;
-    text-align: center;
+    // padding-top: 60px;
+    // padding-bottom: 70px;
+    // width: 780px;
+    // text-align: center;
   }
 
   .about-us__img {
@@ -72,6 +79,33 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    width: 1050px;
+    height: 100vh;
+  }
 
+  // // .about-us__title {
+  // //   width: 1050px;
+  // }
 
+  .about-us__description {
+    order: 1;
+    width: 600px;
+    padding-left: 0;
+  }
+
+  .about-us__title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+.about-us__img-wrapper {
+ padding-right: 55px;
+ padding-top: 50px;
 }
+
+   .about-us__text {
+    padding-bottom: 15px;
+
+
+   }
+ }

@@ -397,7 +397,7 @@
 
   // Parallax No Conflict
 
-  $.fn.parallax.noConflict = function () {
+  $.fn.parallax.noConflict = function() {
     $.fn.parallax = old;
     return this;
   };
@@ -405,8 +405,8 @@
 
   // Parallax Data-API
 
-  $( function () { 
-    $('[data-parallax="scroll"]').parallax(); 
+  $( function() {
+    $('[data-parallax="scroll"]').parallax();
   });
 
 }(jQuery, window, document));
