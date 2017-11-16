@@ -1,14 +1,11 @@
 .contacts {
-  // height: 100vh;
-  font-family: 'Roboto', sans-serif;
   text-align: center;
   padding-bottom: 50px;
 }
 
 .contacts__title {
   font-size: 35px;
-  font-family: 'Roboto', sans-serif;
-  color: $black;
+  color: #000000;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -30,11 +27,12 @@
   font-weight: 300;
   margin-bottom: 35px;
 }
+
 .contacts__email-link {
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 300;
-  color: $black;
+  color: #000000;
 }
 
 .contacts__phone-number {
@@ -44,7 +42,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__title  {
+  .contacts__title {
     padding-top: 20px;
     padding-bottom: 10px;
   }
@@ -56,4 +54,4 @@
   .contacts__phone-number {
     margin-bottom: 40px;
   }
-  }
+}

@@ -5,14 +5,11 @@
 .portfolio-wrapper {
   margin: 0 auto;
   width: 320px;
-  // padding-left: 20px;
-  // padding-right: 20px;
 }
 
 .portfolio__title {
   font-size: 35px;
-  font-family: 'Roboto', sans-serif;
-  color: $white;
+  color: #ffffff;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 60px;
@@ -42,10 +39,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .portfolio {
-    // height: 100vh;
-  }
-
   .portfolio__cards {
     justify-content: space-around;
   }
@@ -69,16 +62,14 @@
   .portfolio-wrapper {
     width: 1050px;
   }
+
   .portfolio__cards {
     width: 900px;
 
     justify-content: space-between;
   }
 
-
   .portfolio__item {
     padding-bottom: 60px;
-    // padding-right: 20px
-
   }
 }

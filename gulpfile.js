@@ -35,9 +35,23 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
+// gulp.task("style", function() {
+//   gulp.src("sass/style.scss")
+//     .pipe(plumber())
+//     .pipe(sass())
+//     .pipe(postcss([
+//       autoprefixer()
+//     ]))
+//     .pipe(gulp.dest("css"))
+//     .pipe(server.stream());
+// });
 
 // gulp.task("images", function () {
 // //   return gulp.src("img/**/*.{png,jpg,svg}")
@@ -55,42 +69,41 @@ gulp.task("style", function() {
 // // });
 
 gulp.task("serve", ["style"], function() {
-  server.init({
-    server: ".",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
+  // server.init({
+  //   server: ".",
+  //   notify: false,
+  //   open: true,
+  //   cors: true,
+  //   ui: false
+  // });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  // gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  // gulp.watch("*.html").on("change", server.reload);
 });
 
-// gulp.task("build", function(done) {
-//   run("clean", "copy", "style", "minjs", done);
-// });
+gulp.task("build", function(done) {
+  run("clean", "copy", "style", "minjs", done);
+});
 
-// gulp.task("clean",function () {
-//   return del("build");
-// });
+gulp.task("clean",function () {
+  return del("build");
+});
 
-// gulp.task("copy", function () {
-//   return gulp.src([
-//     "*.html",
-//     "fonts/**/*.woff",
-//     "fonts/**/*.woff2",
-//     "img/**",
-//     "js/**"
-//     ], {
-//       base: "."
-//     })
-//     .pipe(gulp.dest("build"));
-// });
+gulp.task("copy", function () {
+  return gulp.src([
+    "*.html",
+    "img/**",
+    "js/**",
+    "libs/**"
+    ], {
+      base: "."
+    })
+    .pipe(gulp.dest("build"));
+});
 
-// gulp.task("minjs", function () {
-//   gulp.src("js/script.js")
-//     .pipe(uglify())
-//     .pipe(rename("script.min.js"))
-//     .pipe(gulp.dest("build/js"))
-// });
+gulp.task("minjs", function () {
+  gulp.src("js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+});

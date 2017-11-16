@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -15,6 +15,10 @@
   cursor: pointer;
   background: transparent url("../img/icon-menu-close.svg") no-repeat;
   background-size: cover;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .main-nav__list {
@@ -24,38 +28,30 @@
   line-height: 18px;
   font-weight: 300;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  border-bottom: 1px solid $white;
 }
 
 .main-nav__link {
-  color: $white;
+  color: #ffffff;
   overflow: hidden;
-  // padding: 0 4px;
   padding-right: 5px;
-  // padding-bottom: 5px;
-  // padding-top: 5px;
-  // height: 1em;
   display: inline-block;
 }
 
 .main-nav__link span {
   position: relative;
   display: inline-block;
-  transition: transform 0.3s;
-}
+  transition: transform 0.5s;
 
-.main-nav__link span {
   &::before {
     position: absolute;
     top: 100%;
     content: attr(data-hover);
     font-weight: 700;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
- .main-nav__link:hover span {
+.main-nav__link:hover span {
   transform: translateY(-100%);
 }
 
@@ -63,11 +59,8 @@
   padding-bottom: 15px;
   padding-top: 10px;
   letter-spacing: 1px;
-
 }
-// .main-nav__item-home {
-//   display: none;
-// }
+
 .main-nav--closed .main-nav__toggle {
   width: 22px;
   height: 21px;
@@ -75,7 +68,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-
   .main-nav--closed .main-nav__item {
     display: none;
   }
@@ -97,21 +89,21 @@
     background-color: #08101a;
     width: 320px;
 
-    &:nth-child(2) {
+    &:first-child {
       padding-top: 55px;
     }
+
     &:last-child {
       padding-bottom: 55px;
     }
   }
 
-    .main-nav--tablet {
+  .main-nav--tablet {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
-
   .main-nav {
     position: relative;
     width: 700px;
@@ -125,12 +117,10 @@
   .main-nav__link {
     position: relative;
     transition: transform 0.3s;
-    &:hover {
-    }
   }
 
   .main-nav__item {
-      width: 200px;
+    width: 200px;
   }
 
   .main-nav__list {
@@ -139,14 +129,12 @@
     font-size: 20px;
     padding-top: 15px;
     padding-bottom: 10px;
-
+    border-bottom: 1px solid #ffffff;
   }
 
   .main-nav__link--about-us {
     color: #bebebe;
   }
-
-
 
   .main-nav__toggle {
     display: none;
@@ -155,10 +143,10 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1050px;
+    width: 950px;
   }
 
   .main-nav__list {
     justify-content: center;
-    }
+  }
 }

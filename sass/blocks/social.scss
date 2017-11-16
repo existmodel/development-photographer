@@ -6,6 +6,10 @@
 
 .social__link {
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
 }
 
 .social__link--ins {
@@ -29,7 +33,6 @@
   background: transparent url("../img/skype.png") no-repeat;
   background-size: cover;
   display: block;
-  margin-top: 5px;
   width: 35px;
   height: 35px;
   margin-top: 8px;

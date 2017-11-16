@@ -15,8 +15,7 @@ img {
 body {
   margin: 0 auto;
   min-width: 320px;
-  // font: $regular-font-weight #{$main-font-size}/#{$main-line-height} $font-stack;
-  // font-family: "Nexa Light";
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .visually-hidden:not(:focus):not(:active) {
